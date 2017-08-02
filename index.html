@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node school</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="form-wrapper">
+        <form action="" id="myForm" class="form">
+            <div class="form__input-container">
+                <label for="formOrderName" class="form__label">ФИО</label>
+                <input type="text" class="form__input" id="formOrderName" name="fio">
+            </div>
+            <div class="form__input-container">
+                <label for="formOrderMail" class="form__label">Email</label>
+                <input type="text" class="form__input" id="formOrderMail" name="email">
+            </div>
+            <div class="form__input-container">
+                <label for="formOrderPhone" class="form__label">Телефон</label>
+                <input type="text" class="form__input" id="formOrderPhone" name="phone">
+            </div>
+            <input type="submit" class="form__submit" id="submitButton">
+        </form>
+        <div class="form-processed" id="resultContainer"></div>
+    </div>
+    <div class="settings">
+      <form action="" class="settings__form">
+        <input id="settingsFormSuccess" type="radio" class="settings__form-radio" name="settingsData" value="success" checked>
+        <label for="settingsFormSuccess" class="settings__form-label">success.json</label>
+        <input id="settingsFormError" type="radio" class="settings__form-radio" name="settingsData" value="error">
+        <label for="settingsFormError" class="settings__form-label">error.json</label>
+        <input id="settingsFormProgress" type="radio" class="settings__form-radio" name="settingsData" value="progress">
+        <label for="settingsFormProgress" class="settings__form-label">progress.json</label>
+      </form>
+      <button class="settings__fab"></button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
